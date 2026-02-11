@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About | MIDHUN G KAIMAL</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Public+Sans:wght@400;500;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="about-page">
+  <div class="bg-stripe"></div>
+  <header class="site-header">
+    <nav class="topbar wrap">
+      <a class="brand" href="./index.html">MIDHUN G KAIMAL</a>
+      <div class="nav-links">
+        <a href="./projects.html">Projects</a>
+        <a href="./process.html">Process</a>
+        <a href="./skills.html">Skills</a>
+        <a href="./about.html">About</a>
+        <a href="./contact.html">Contact</a>
+      </div>
+    </nav>
+  </header>
+  <main class="wrap section-page about-container">
+    <h1 class="about-title">About</h1>
+
+    <section class="card about-card">
+      <p id="aboutText"></p>
+      <div class="about-actions">
+        <a class="btn btn-primary" id="resumeBtn" href="#" target="_blank" rel="noreferrer">Resume</a>
+        <a class="btn btn-ghost" href="./contact.html">Contact</a>
+      </div>
+    </section>
+
+    <section class="card about-stats" id="statRow" aria-label="Highlights"></section>
+
+    <section class="card about-facts">
+      <h2>Quick facts</h2>
+      <ul class="fact-list" id="factList"></ul>
+    </section>
+  </main>
+  <footer class="site-footer wrap"><p id="footerText"></p></footer>
+  <script type="module" src="about.js"></script>
+</body>
+</html>

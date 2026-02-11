@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects | MIDHUN G KAIMAL</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Public+Sans:wght@400;500;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="projects-page">
+  <div class="bg-stripe"></div>
+  <div class="ambient ambient-a"></div>
+  <div class="ambient ambient-b"></div>
+  <header class="site-header">
+    <nav class="topbar wrap">
+      <a class="brand" href="./index.html" id="brandName">MIDHUN G KAIMAL</a>
+      <div class="nav-links">
+        <a href="./projects.html">Projects</a>
+        <a href="./process.html">Process</a>
+        <a href="./skills.html">Skills</a>
+        <a href="./about.html">About</a>
+        <a href="./contact.html">Contact</a>
+      </div>
+    </nav>
+  </header>
+  <main class="wrap section-page">
+    <section class="projects-hero">
+      <div class="section-head">
+        <p class="eyebrow">Selected Work</p>
+        <h1>Projects</h1>
+        <p>Case studies with practical outcomes, technical decisions, and implementation notes.</p>
+      </div>
+      <div class="hero-kpis">
+        <article>
+          <strong id="kpiTotal">0</strong>
+          <span>Total Projects</span>
+        </article>
+        <article>
+          <strong id="kpiStacks">0</strong>
+          <span>Unique Skills</span>
+        </article>
+        <article>
+          <strong id="kpiYears">0</strong>
+          <span>Active Years</span>
+        </article>
+      </div>
+    </section>
+    <section class="toolbar" aria-label="Project controls">
+      <label class="field">
+        <span class="field-label">Search</span>
+        <input class="input" id="projectSearch" type="search" placeholder="Search projects (press /)" autocomplete="off" />
+      </label>
+      <label class="field">
+        <span class="field-label">Sort</span>
+        <select class="select" id="projectSort">
+          <option value="year_desc">Year (newest)</option>
+          <option value="title_asc">Title (A-Z)</option>
+        </select>
+      </label>
+      <button class="btn btn-ghost btn-small" id="projectClear" type="button">Clear</button>
+    </section>
+    <section class="filter-row" aria-label="Project filters">
+      <div class="filter-chips" id="projectFilters"></div>
+      <p class="result-count" id="projectCount"></p>
+    </section>
+    <section class="book-wrap" aria-label="Project book">
+      <div class="book-frame">
+        <div class="book-page" id="bookPage"></div>
+      </div>
+      <div class="book-controls">
+        <button class="btn btn-ghost btn-small" id="bookPrev" type="button">Prev Page</button>
+        <span class="book-status" id="bookStatus">Page 1 of 1</span>
+        <button class="btn btn-primary btn-small" id="bookNext" type="button">Next Page</button>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer wrap"><p id="footerText"></p></footer>
+  <script type="module" src="projects.js"></script>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MIDHUN G KAIMAL | Portfolio</title>
+  <meta name="description" content="Portfolio of MIDHUN G KAIMAL: full-stack projects, case studies, and contact links." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Public+Sans:wght@400;500;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="home-page">
+  <a class="skip-link" href="#mainContent">Skip to content</a>
+  <div class="bg-stripe"></div>
+  <div class="home-canvas" aria-hidden="true">
+    <span class="orb orb-sun" data-float="0.35"></span>
+    <span class="orb orb-mint" data-float="0.55"></span>
+    <span class="orb orb-ink" data-float="0.25"></span>
+    <span class="ring ring-a" data-float="0.4"></span>
+    <span class="ring ring-b" data-float="0.3"></span>
+  </div>
+
+  <header class="site-header" id="home">
+    <nav class="topbar wrap">
+      <a class="brand" href="./index.html" id="brandName">MIDHUN G KAIMAL</a>
+      <div class="nav-links">
+        <a href="./projects.html">Projects</a>
+        <a href="./process.html">Process</a>
+        <a href="./skills.html">Skills</a>
+        <a href="./about.html">About</a>
+        <a href="./contact.html">Contact</a>
+      </div>
+    </nav>
+
+    <section class="hero wrap">
+      <div class="hero-main reveal home-hero-panel">
+        <p class="eyebrow" id="heroTagline">Full-Stack Developer</p>
+        <h1 id="heroTitle">Designing practical products with clear engineering logic.</h1>
+        <p class="hero-sub" id="heroSubtitle"></p>
+        <p class="hero-kicker">Engineering + Product + UX</p>
+        <div class="hero-badges" id="heroBadges"></div>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="./projects.html">Explore Projects</a>
+          <a class="btn btn-ghost" id="resumeLink" href="#" target="_blank" rel="noreferrer">Download Resume</a>
+        </div>
+      </div>
+
+      <aside class="hero-side reveal-delay home-profile-card">
+        <img id="profileImage" src="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?auto=format&fit=crop&w=500&q=80" alt="Profile" />
+        <h2 id="profileName">MIDHUN G KAIMAL</h2>
+        <p id="profileRole">Full-Stack Developer</p>
+        <div class="socials" id="socialLinks"></div>
+      </aside>
+    </section>
+
+    <section class="wrap stat-grid" id="statGrid"></section>
+  </header>
+
+  <main id="mainContent">
+    <section class="section wrap" id="projects">
+      <div class="section-head reveal">
+        <h2>Featured Case Study</h2>
+      </div>
+      <article class="spotlight" id="spotlightProject"></article>
+      <p class="section-link"><a href="./projects.html">View all projects</a></p>
+    </section>
+
+    <section class="section wrap panel" id="about">
+      <h2>About</h2>
+      <p id="aboutText"></p>
+      <p class="section-link"><a href="./about.html">Read full about</a></p>
+    </section>
+  </main>
+
+  <footer class="site-footer wrap">
+    <p id="footerText"></p>
+  </footer>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>
+
+

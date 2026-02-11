@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | MIDHUN G KAIMAL</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Public+Sans:wght@400;500;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="bg-stripe"></div>
+  <header class="site-header">
+    <nav class="topbar wrap">
+      <a class="brand" href="./index.html">MIDHUN G KAIMAL</a>
+      <div class="nav-links">
+        <a href="./projects.html">Projects</a>
+        <a href="./process.html">Process</a>
+        <a href="./skills.html">Skills</a>
+        <a href="./about.html">About</a>
+        <a href="./contact.html">Contact</a>
+      </div>
+    </nav>
+  </header>
+  <main class="wrap section-page">
+    <div class="section-head"><h1>Contact</h1></div>
+    <section class="panel">
+      <p class="contact-row">
+        <span>Email:</span>
+        <a id="emailLink" href="mailto:you@example.com">you@example.com</a>
+        <button class="btn btn-ghost btn-small" id="copyEmail" type="button">Copy</button>
+      </p>
+      <div class="socials" id="socialLinks"></div>
+    </section>
+
+    <section class="panel">
+      <h2>Quick message</h2>
+      <div class="form-grid">
+        <label class="field">
+          <span class="field-label">Subject</span>
+          <input class="input" id="msgSubject" type="text" placeholder="Portfolio inquiry" />
+        </label>
+        <label class="field">
+          <span class="field-label">Message</span>
+          <textarea class="input textarea" id="msgBody" rows="5" placeholder="Write a short message..."></textarea>
+        </label>
+      </div>
+      <div class="mini-actions">
+        <a class="btn btn-primary btn-small" id="mailtoBtn" href="#">Open email app</a>
+        <button class="btn btn-ghost btn-small" id="clearMsg" type="button">Clear</button>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer wrap"><p id="footerText"></p></footer>
+  <script type="module" src="contact.js"></script>
+</body>
+</html>
