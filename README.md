@@ -16,7 +16,7 @@ Configured with:
 
 - Home page: `index.html`
 - Project details page: `project.html?project=healtrip`
-- Supported IDs: `healtrip`, `allergen`, `alera`
+- Supported IDs: `healtrip`, `allergen`, `online-learning`, `alera`
 
 Each project card now opens its own details page.
 

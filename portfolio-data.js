@@ -134,6 +134,38 @@ export const portfolioData = {
       }
     },
     {
+      id: "online-learning",
+      title: "Online Learning",
+      year: "2026",
+      role: "Full-Stack Developer",
+      description:
+        "An online learning platform concept built for course discovery, progress tracking, and structured learning workflows.",
+      impact: "Improved course navigation and user progress visibility through a clear learning flow.",
+      stack: ["JavaScript", "HTML/CSS", "Python", "Flask"],
+      repoUrl: "https://github.com/Midhungirish2002/online-learning",
+      detail: {
+        challenge:
+          "Learners need a simple way to browse courses, follow a path, and track progress without interface clutter.",
+        solution:
+          "Built a clean multi-page flow focused on course access, learner engagement, and progress awareness.",
+        approach: [
+          "Defined key user journeys for browsing, enrollment, and learning progress",
+          "Implemented modular pages for maintainable feature growth",
+          "Structured data handling for future backend and analytics integration"
+        ],
+        highlights: [
+          "Clear course-first interface structure",
+          "Improved usability for learner navigation",
+          "Extensible foundation for additional learning features"
+        ],
+        architecture: [
+          "Page modules separated by learner intent",
+          "Reusable UI blocks for consistent navigation",
+          "Backend-ready structure for scaling features"
+        ]
+      }
+    },
+    {
       id: "alera",
       title: "ALERA",
       year: "2026",

@@ -25,9 +25,13 @@ profileImage.alt = `${portfolioData.name} profile image`;
 profileName.textContent = portfolioData.name;
 profileRole.textContent = portfolioData.role;
 aboutText.textContent = portfolioData.about;
+const featuredProject =
+  portfolioData.projects.find((project) => project.id === "online-learning") ||
+  portfolioData.projects[0];
+
 if (heroBadges) {
   const badgeItems = [
-    ...portfolioData.projects[0].stack.slice(0, 3),
+    ...(featuredProject?.stack || []).slice(0, 3),
     portfolioData.role
   ];
 
@@ -50,13 +54,16 @@ portfolioData.socials.forEach((social) => {
 });
 
 portfolioData.stats.forEach((item) => {
+  const value =
+    String(item.label).toLowerCase() === "featured repositories"
+      ? String(portfolioData.projects.length)
+      : item.value;
   const card = document.createElement("article");
   card.className = "stat-card";
-  card.innerHTML = `<strong>${item.value}</strong><span>${item.label}</span>`;
+  card.innerHTML = `<strong>${value}</strong><span>${item.label}</span>`;
   statGrid.appendChild(card);
 });
 
-const featuredProject = portfolioData.projects[0];
 if (featuredProject && spotlightProject) {
   const featuredStack = featuredProject.stack.map((item) => `<span>${item}</span>`).join("");
 
