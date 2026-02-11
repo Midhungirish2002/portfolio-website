@@ -139,29 +139,38 @@ export const portfolioData = {
       year: "2026",
       role: "Full-Stack Developer",
       description:
-        "An online learning platform concept built for course discovery, progress tracking, and structured learning workflows.",
-      impact: "Improved course navigation and user progress visibility through a clear learning flow.",
-      stack: ["JavaScript", "HTML/CSS", "Python", "Flask"],
+        "A full-stack LMS built with a Django REST backend and React frontend for students, instructors, and admins.",
+      impact:
+        "Delivered role-based learning workflows with quizzes, progress tracking, forum discussion, notifications, and analytics.",
+      stack: [
+        "Python",
+        "Django",
+        "Django REST Framework",
+        "React",
+        "PostgreSQL",
+        "JWT Auth",
+        "WebSockets"
+      ],
       repoUrl: "https://github.com/Midhungirish2002/online-learning",
       detail: {
         challenge:
-          "Learners need a simple way to browse courses, follow a path, and track progress without interface clutter.",
+          "Learning platforms must support different user roles while keeping course management and learner experience simple and scalable.",
         solution:
-          "Built a clean multi-page flow focused on course access, learner engagement, and progress awareness.",
+          "Designed a role-based platform where instructors manage courses, students learn and track progress, and admins monitor platform activity.",
         approach: [
-          "Defined key user journeys for browsing, enrollment, and learning progress",
-          "Implemented modular pages for maintainable feature growth",
-          "Structured data handling for future backend and analytics integration"
+          "Built REST APIs for auth, courses, lessons, quizzes, ratings, and forum interactions",
+          "Implemented JWT-based authentication and role-aware access control",
+          "Integrated React dashboards for student, instructor, and admin workflows"
         ],
         highlights: [
-          "Clear course-first interface structure",
-          "Improved usability for learner navigation",
-          "Extensible foundation for additional learning features"
+          "Course creation, enrollment flow, lesson progress, and quiz attempts",
+          "Forum discussion support and real-time notifications",
+          "Analytics dashboards and certificate generation support"
         ],
         architecture: [
-          "Page modules separated by learner intent",
-          "Reusable UI blocks for consistent navigation",
-          "Backend-ready structure for scaling features"
+          "Django + DRF backend with modular views/serializers",
+          "React (Vite) frontend with API layer and protected routes",
+          "PostgreSQL data model with seed command for test data"
         ]
       }
     },
