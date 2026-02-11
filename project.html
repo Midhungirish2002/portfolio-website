@@ -3,71 +3,81 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Project Details | MIDHUN G KAIMAL</title>
+  <title>Case Study | Midhun G Kaimal</title>
+  <meta name="description" content="Project case study details for Midhun G Kaimal portfolio." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Public+Sans:wght@400;500;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;700;800&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <a class="skip-link" href="#mainContent">Skip to content</a>
-  <div class="bg-stripe"></div>
 
-  <header class="site-header">
-    <nav class="topbar wrap">
-      <a class="brand" href="./index.html" id="brandName">MIDHUN G KAIMAL</a>
+  <header class="site-shell detail-shell">
+    <nav class="floating-nav" aria-label="Primary">
+      <a class="brand" href="./index.html#home">MIDHUN</a>
       <div class="nav-links">
-        <a href="./projects.html">Projects</a>
-        <a href="./process.html">Process</a>
-        <a href="./skills.html">Skills</a>
-        <a href="./about.html">About</a>
-        <a href="./contact.html">Contact</a>
+        <a href="./index.html#projects">Projects</a>
+        <a href="./index.html#skills">Skills</a>
+        <a href="./index.html#about">About</a>
+        <a href="./index.html#contact">Contact</a>
       </div>
+      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle theme">Theme</button>
     </nav>
   </header>
 
-  <main class="wrap" id="mainContent">
+  <main class="wrap detail-main" id="mainContent">
+    <!-- Project detail header -->
     <section class="detail-hero reveal">
-      <p class="eyebrow" id="projectBadge">Case Study</p>
-      <h1 class="detail-title" id="projectTitle">Project Title</h1>
-      <p class="detail-subtitle" id="projectDescription"></p>
-      <div class="detail-links" id="projectLinks"></div>
+      <p class="eyebrow" id="projectMeta">Case Study</p>
+      <h1 id="projectTitle">Project Title</h1>
+      <p class="detail-summary" id="projectSummary"></p>
+      <a class="btn btn-primary" id="projectGithub" href="#" target="_blank" rel="noreferrer">View on GitHub</a>
     </section>
 
-    <section class="detail-grid-wide">
-      <article class="detail-block">
+    <!-- Meta data row -->
+    <section class="detail-meta reveal">
+      <article>
+        <h2>Role</h2>
+        <p id="projectRole"></p>
+      </article>
+      <article>
+        <h2>Year</h2>
+        <p id="projectYear"></p>
+      </article>
+      <article>
+        <h2>Tech Stack</h2>
+        <div class="chip-row" id="projectStack"></div>
+      </article>
+    </section>
+
+    <!-- Case study content -->
+    <section class="detail-content reveal">
+      <article>
         <h2>Challenge</h2>
         <p id="projectChallenge"></p>
       </article>
-      <article class="detail-block">
+      <article>
         <h2>Solution</h2>
         <p id="projectSolution"></p>
       </article>
-      <article class="detail-block">
-        <h2>Implementation Steps</h2>
-        <ul id="projectApproach"></ul>
-      </article>
-      <article class="detail-block">
-        <h2>Outcomes</h2>
-        <ul id="projectHighlights"></ul>
-      </article>
-      <article class="detail-block">
-        <h2>Architecture Notes</h2>
-        <ul id="projectArchitecture"></ul>
-      </article>
-      <article class="detail-block">
-        <h2>Tech Stack</h2>
-        <div class="detail-stack" id="projectStack"></div>
+      <article>
+        <h2>Key Features</h2>
+        <ul id="projectFeatures"></ul>
       </article>
     </section>
 
-    <section class="detail-nav" id="projectNav"></section>
+    <!-- Screenshot gallery -->
+    <section class="detail-gallery reveal" id="projectGallery"></section>
+
+    <!-- Prev/Next navigation -->
+    <nav class="detail-nav" id="projectNav" aria-label="Project navigation"></nav>
   </main>
 
   <footer class="site-footer wrap">
     <p id="footerText"></p>
   </footer>
 
-  <script type="module" src="project.js"></script>
+  <script type="module" src="project.js?v=20260211-1"></script>
 </body>
 </html>
