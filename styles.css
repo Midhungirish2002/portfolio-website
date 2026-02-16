@@ -168,7 +168,16 @@ img {
 }
 
 .hero-title span:last-child {
-  color: rgba(248, 250, 252, 0.82);
+  color: var(--text-sub);
+}
+
+/* Add variable to root and theme for text visibility */
+:root {
+  --text-sub: rgba(255, 255, 255, 0.82);
+}
+
+[data-theme="light"] {
+  --text-sub: rgba(15, 26, 42, 0.82);
 }
 
 .hero-sub {
@@ -252,6 +261,7 @@ img {
   filter: drop-shadow(0 10px 14px rgba(0, 0, 0, 0.24));
   transform-origin: center;
   transform: translate(-50%, -50%);
+  --hornbill-flap-rate: 0.95s;
 }
 
 .hornbill svg {
@@ -261,11 +271,35 @@ img {
 
 .hornbill .wing {
   transform-origin: 60px 44px;
-  animation: flap 1050ms ease-in-out infinite;
+  animation: flap var(--hornbill-flap-rate) ease-in-out infinite;
 }
 
 .hornbill .wing-back {
   animation-delay: -140ms;
+}
+
+.hb-body {
+  fill: var(--hb-body);
+}
+
+.hb-wing-back {
+  fill: var(--hb-wing-back);
+}
+
+.hb-wing-front {
+  fill: var(--hb-wing-front);
+}
+
+.hb-beak-top {
+  fill: var(--hb-beak-top);
+}
+
+.hb-beak-bottom {
+  fill: var(--hb-beak-bottom);
+}
+
+.hb-eye {
+  fill: var(--hb-eye);
 }
 
 .section {
@@ -500,9 +534,21 @@ textarea {
   color: var(--text);
   font: inherit;
   font-weight: 700;
-  padding: 0.4rem 0.72rem;
+  padding: 0;
+  width: 2.4rem;
+  height: 2.4rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
   cursor: pointer;
   transition: transform 160ms ease, border-color 160ms ease;
+}
+
+.theme-toggle svg {
+  width: 1.1rem;
+  height: 1.1rem;
+  display: block;
 }
 
 .theme-toggle:hover {
@@ -533,7 +579,24 @@ textarea:focus {
   text-decoration: none;
   border: 1px solid var(--border);
   border-radius: 999px;
-  padding: 0.35rem 0.68rem;
+  padding: 0.5rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 180ms ease, border-color 180ms ease, background-color 180ms ease;
+}
+
+.social-row a:hover {
+  transform: translateY(-2px);
+  border-color: var(--accent);
+  background: rgba(53, 208, 255, 0.1);
+}
+
+.social-row a svg,
+.social-row a img {
+  width: 20px;
+  height: 20px;
+  display: block;
 }
 
 .site-footer {
@@ -686,22 +749,49 @@ body.has-reveal-js .reveal.is-visible {
 }
 
 @keyframes orbitA {
-  0% { transform: translate(0, 0); }
-  50% { transform: translate(22px, 54px); }
-  100% { transform: translate(0, 0); }
+  0% {
+    transform: translate(0, 0);
+  }
+
+  50% {
+    transform: translate(22px, 54px);
+  }
+
+  100% {
+    transform: translate(0, 0);
+  }
 }
 
 @keyframes orbitB {
-  0% { transform: translate(0, 0); }
-  50% { transform: translate(-32px, -44px); }
-  100% { transform: translate(0, 0); }
+  0% {
+    transform: translate(0, 0);
+  }
+
+  50% {
+    transform: translate(-32px, -44px);
+  }
+
+  100% {
+    transform: translate(0, 0);
+  }
 }
 
 @keyframes flap {
-  0% { transform: rotate(0deg); }
-  35% { transform: rotate(-12deg); }
-  70% { transform: rotate(8deg); }
-  100% { transform: rotate(0deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+
+  35% {
+    transform: rotate(-12deg);
+  }
+
+  70% {
+    transform: rotate(8deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
 }
 
 @media (max-width: 900px) {
@@ -798,4 +888,3 @@ body.has-reveal-js .reveal.is-visible {
     transition: none !important;
   }
 }
-

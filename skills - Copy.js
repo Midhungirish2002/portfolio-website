@@ -1,5 +1,5 @@
 import { portfolioData } from "./portfolio-data.js";
-import { initSite } from "./site.js?v=20260211-2";
+import { initSite } from "./site.js";
 
 const skillBoard = document.getElementById("skillBoard");
 

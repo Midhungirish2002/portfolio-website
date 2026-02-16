@@ -1,5 +1,5 @@
-﻿import { portfolioData } from "./portfolio-data.js";
-import { initSite } from "./site.js";
+import { portfolioData } from "./portfolio-data.js";
+import { initSite } from "./site.js?v=20260211-2";
 
 const aboutText = document.getElementById("aboutText");
 const statRow = document.getElementById("statRow");

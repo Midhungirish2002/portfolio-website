@@ -1,5 +1,5 @@
-﻿import { portfolioData } from "./portfolio-data.js";
-import { initSite, toast, copyToClipboard } from "./site.js";
+import { portfolioData } from "./portfolio-data.js";
+import { initSite, toast, copyToClipboard } from "./site.js?v=20260211-2";
 
 const emailLink = document.getElementById("emailLink");
 const copyEmail = document.getElementById("copyEmail");

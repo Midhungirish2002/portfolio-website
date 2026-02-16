@@ -1,5 +1,5 @@
 import { portfolioData } from "./portfolio-data.js";
-import { initSite, toast, copyToClipboard } from "./site.js?v=20260211-2";
+import { initSite, toast, copyToClipboard } from "./site.js";
 
 const projectSearch = document.getElementById("projectSearch");
 const projectSort = document.getElementById("projectSort");

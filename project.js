@@ -1,5 +1,5 @@
-﻿import { portfolioData } from "./portfolio-data.js";
-import { initSite } from "./site.js";
+import { portfolioData } from "./portfolio-data.js";
+import { initSite } from "./site.js?v=20260211-2";
 
 initSite(portfolioData);
 
@@ -29,7 +29,7 @@ if (!project) {
 } else {
   // Core case-study fields.
   document.title = `${project.title} | ${portfolioData.name}`;
-  projectMeta.textContent = `${project.role} • ${project.year}`;
+  projectMeta.textContent = `${project.role} � ${project.year}`;
   projectTitle.textContent = project.title;
   projectSummary.textContent = project.summary;
   projectRole.textContent = project.role;

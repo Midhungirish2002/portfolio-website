@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Icon Test</title>
+    <style>
+        body {
+            padding: 40px;
+            background: #0d1117;
+            color: white;
+            font-family: sans-serif;
+        }
+
+        .social-row {
+            display: flex;
+            gap: 1rem;
+            margin-top: 20px;
+        }
+
+        .social-row a {
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-radius: 50%;
+            padding: 0.5rem;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(255, 255, 255, 0.05);
+        }
+
+        .social-row a img {
+            width: 20px;
+            height: 20px;
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Icon Test</h1>
+    <p>Testing official GitHub and LinkedIn icons from devicons CDN:</p>
+
+    <div class="social-row">
+        <a href="https://github.com" target="_blank" aria-label="GitHub">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" />
+        </a>
+        <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg"
+                alt="LinkedIn" />
+        </a>
+    </div>
+
+    <p style="margin-top: 40px; color: #888;">If you see circular buttons with icons above, the CDN icons are working
+        correctly.</p>
+</body>
+
+</html>

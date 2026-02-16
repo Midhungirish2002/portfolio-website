@@ -81,6 +81,8 @@ export function initSmoothAnchorScroll() {
 }
 
 const THEME_KEY = "portfolio-theme";
+const SUN_ICON = '<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"></circle><path d="M12 2v3M12 19v3M4.93 4.93l2.12 2.12M16.95 16.95l2.12 2.12M2 12h3M19 12h3M4.93 19.07l2.12-2.12M16.95 7.05l2.12-2.12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path></svg>';
+const MOON_ICON = '<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M21 12.8A9 9 0 1111.2 3a7 7 0 109.8 9.8z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"></path></svg>';
 
 function initThemeToggle() {
   const preferred = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
@@ -107,7 +109,7 @@ function applyTheme(theme) {
 
 function updateToggleLabel(button, theme) {
   const isDark = theme === "dark";
-  button.textContent = isDark ? "Light" : "Dark";
+  button.innerHTML = isDark ? MOON_ICON : SUN_ICON;
   button.setAttribute("aria-label", isDark ? "Switch to light mode" : "Switch to dark mode");
   button.setAttribute("title", isDark ? "Switch to light mode" : "Switch to dark mode");
 }
